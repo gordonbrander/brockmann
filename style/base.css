@@ -1,0 +1,223 @@
+/* Reset: Based on v1.0 | 20080212 of http://meyerweb.com/eric/tools/css/reset sans table styles
+=================================================================================================*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+hr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+address,cite {
+	font-style: normal;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+/* Typography
+=========================================*/
+body {
+	background:#e9e5e1;
+	color:#333;
+	/* Set in percentages so IE6 can still resize. The percentage notation also fixes a strange quirk where IE dramaticly scales text. */
+	font: 87.5%/1.5 georgia, serif; 
+}
+/* Text styles */
+code {
+	font-family: "Lucida Console", Monaco, monospace;
+	padding:2px;
+}
+f
+strong {
+	font-weight: bold
+}
+.verse,
+em,
+*[lang] {
+	font-style: italic
+}
+/* .verse is to be used for poetry */
+strike,del {
+	text-decoration: line-through
+}
+acronym,.caps {
+	text-transform: uppercase;
+}
+.small-caps {
+	font-variant: small-caps
+}
+acronym,
+.num,
+.caps,
+.small-caps {
+	letter-spacing: 0.1em;
+}
+a,
+a:visited {
+	border-bottom:1px solid #BDBAB7;
+	color:green;
+	text-decoration:none;
+}
+a:hover {
+	border-color:#D1CFCC;
+}
+/* elements with title attribute */
+abbr[title],
+acronym[title],
+dfn[title],
+span[title],
+del[title] {
+	cursor: help;
+}
+/* typogrify: inset initial double quotes. */
+.dquo {
+	margin-left: -.45em;
+}
+/* fancy ampersands */
+.amp {
+	font-size: 110%;
+	font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+	font-style: italic;
+}
+/* Font sizes and vertical measure */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.sidehead {
+	font-weight:bold;
+	font-family:helvetica, arial, verdana, sans-serif;
+	text-shadow: #fff 0 1px 0;
+}
+h1 {
+	font-size: 2em;
+	line-height: 1;
+	margin: 0 0 10px;
+}
+h2{
+	font-size: 1.5em;
+	line-height: 1;
+	margin: 0 0 .5em;
+}
+h3 {
+	font-size: 1.16666667em;
+	line-height: 1.28571429;
+	margin: 0 0 .642857145;
+}
+h4,
+h5,
+h6 {
+	text-shadow: #D9D6D5 0 1px 0;
+	margin-bottom:.75em;
+}
+p,
+ul,
+ol,
+dl {
+	margin-bottom:1.5em;
+}
+blockquote,
+q {
+	font-style:italic;
+}
+blockquote {
+	margin: 1.5em;
+}
+blockquote.verse {
+	margin-left: 0;
+	margin-right: 0;
+}
+acronym,
+.caps {
+	font-size: 90%;
+}
+.sub,
+.small{
+	font-size:12px;
+	line-height:1;
+}
+.sup,
+.sup * {
+	font-size:12px;
+	line-height:1;
+	letter-spacing:0;
+	vertical-align:baseline;
+}
+pre {
+	font-size: 1em;
+	line-height: 1.5;
+	overflow: auto;
+}
+.verse pre {
+	display: table;
+	margin: 0 auto;
+	width: auto;
+}
+textarea {
+	font-size: 1em;
+	line-height: 1.5;
+}
+li ul,
+li ol,
+dd {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 1.5em;
+}
+hr {
+	background:#777;
+	color:#777;
+	height:1px;
+	margin-bottom:1.5em;
+}
+fieldset {
+	margin:0 0 1.5em;
+	padding:.5em;
+}
+table {
+	margin-bottom:1.5em;
+}
+
+/* Wiki styles */
+
+a.createlinktext,
+a.createlinktext:visited {
+	border-style:dotted;
+	font-style:italic;
+}
+a.createlink,
+a.createlink:visited {
+	border:0;
+	color:#999;
+	font-size:.8em;
+	vertical-align: super;
+}
+
+.quickref td {
+	border-bottom:1px solid #ccc;
+	padding: 5px;
+}
+.quickref td p {
+	margin:0;
+}

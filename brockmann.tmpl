@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+	<title>$WikiTitle / {$Group} / {$Title} $ActionTitle</title>
+	
+	<!--/for iPhone/iPod Touch -->
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0, user-scalable = no" />
+
+	<link rel="alternate" type="application/rss+xml" title="$WikiTitle RSS Feed" href="{$ScriptUrl}?action=rss&amp;order=-time&amp;count=10" />
+	<link rel="alternate" type="application/atom+xml" title="$WikiTitle Atom Feed" href="{$ScriptUrl}?action=atom&amp;order=-time&amp;count=10" />
+
+	<link rel='stylesheet' href='$SkinDirUrl/style/brockmann.css' type='text/css' />
+	<!--HTMLHeader-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+	<script type="text/javascript" src="$SkinDirUrl/behavior/brockmann.js"></script>
+</head>
+<body>
+<div id="body">
+	<!--PageHeaderFmt-->
+		<div id="header">
+			<p class='breadcrumb'><a rel="home" href="{$ScriptUrl}">$WikiTitle</a> / <a href="{$ScriptUrl}/{$Group}">{$Group}</a> /</p>
+	        <h1 class="pagetitle">{$Title}</h1>
+		</div>
+	<!--/PageHeaderFmt-->
+		
+		<div id="content">
+
+			<!--PageTitleFmt-->
+			<!--PageText-->
+		</div>
+		<hr />
+		<!--PageActionFmt-->
+		<div class='wiki-actions'><!--wiki:{$Group}.PageActions {$SiteGroup}.PageActions--></div>
+
+		<div id="aside">
+
+			<p><a href='{$ScriptUrl}/$[{$Group}/RecentChanges]' accesskey='$[ak_recentchanges]'>$[Recent Changes]</a> / <a href="#navigation">Navigation &darr;</a></p>
+			
+			<!--PageLeftFmt-->
+			<div id="navigation">
+				<!--wiki:{$Group}.SideBar {$SiteGroup}.SideBar-->
+			</div>
+			<!--/PageLeftFmt-->
+			
+			<form action='{$ScriptUrl}'>
+		    	<div>
+					<input type='text' name='q' value='' class='inputbox searchbox' />
+		    		<input type='submit' class='inputbutton searchbutton' value='$[Search]' /><br />
+					<span>(<a href='{$ScriptUrl}/$[{$SiteGroup}/Search]'>$[Search Help]</a>)</span>
+
+					<input type='hidden' name='n' value='{$FullName}' />
+		    		<input type='hidden' name='action' value='search' />
+				</div>
+			</form>
+
+		</div>
+		<p class='date-time'>$[Page last modified on {$LastModified}]</p>
+
+	<!--PageFooterFmt-->
+
+	<!--HTMLFooter-->
+	
+</div>
+</body>
+</html>
